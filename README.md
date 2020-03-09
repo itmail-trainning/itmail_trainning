@@ -1,1 +1,0 @@
-# itmail_trainning
