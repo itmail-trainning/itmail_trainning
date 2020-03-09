@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">研修用アプリ</string>
+    <string name="action_settings">リスト検索</string>
+    <string name="dog">ティメル犬</string>
+    <string name="title">アイティメル沖縄</string>
+    <string name="title_activity_view2">リスト検索</string>
+</resources>
