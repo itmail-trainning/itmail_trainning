@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.myapp.newcommertranning.R
+import kotlinx.android.synthetic.main.item_search_list.*
 
 class RecyclerAdapter(context: Context, val data: List<String>): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
     val inflater = LayoutInflater.from(context)
@@ -27,6 +28,11 @@ class RecyclerAdapter(context: Context, val data: List<String>): RecyclerView.Ad
         holder.lblNumber.text = (position + 1).toString()
         // 内容にデータをセット
         holder.lblItem.text = data[position]
+
+        if((position + 1) % 5 == 0) {
+            holder.lblNumber.setBackgroundColor(Color.RED)
+        }
+
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

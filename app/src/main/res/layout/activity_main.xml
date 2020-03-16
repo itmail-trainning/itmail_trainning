@@ -21,7 +21,9 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main" android:id="@+id/contentMain"/>
+    <include
+        android:id="@+id/contentMain"
+        layout="@layout/content_main" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabMail"
@@ -31,13 +33,15 @@
             android:layout_margin="@dimen/fab_margin"
             app:srcCompat="@android:drawable/ic_dialog_email"
     />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            app:srcCompat="@android:drawable/ic_dialog_info"
-            android:id="@+id/fabInfo"
-            android:layout_gravity="bottom|end"
-            android:layout_marginEnd="84dp" android:layout_marginBottom="16dp"/>
+        android:id="@+id/fabInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="340dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

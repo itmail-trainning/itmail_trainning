@@ -1,5 +1,6 @@
 package com.myapp.newcommertranning
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -25,6 +26,7 @@ class View2Activity : AppCompatActivity() {
         // 作成したデータをリストにセット
         this.listRecycler.layoutManager = LinearLayoutManager(this)
         this.listRecycler.adapter = adapter
+        //this.lblNumber.setBackgroundColor(Color.WHITE)
 
         // 検索ボタンクリックイベント
         this.btnSearch.setOnClickListener { view ->
@@ -38,6 +40,7 @@ class View2Activity : AppCompatActivity() {
             // 検索結果表示
             if (idx > 0) {
                 // 存在した場合
+                var idx = idx + 1
                 this.txtResult.text = idx.toString() + " 行目"
             } else {
                 // 存在しない場合
@@ -55,7 +58,7 @@ class View2Activity : AppCompatActivity() {
         val maxCount = 10
 
         // データをループで作成
-        for (i in startIndex .. maxCount + startIndex) {
+        for (i in startIndex until maxCount ) {
             // リストデータに追加
             list.add("文字列${i + 1}")
         }
