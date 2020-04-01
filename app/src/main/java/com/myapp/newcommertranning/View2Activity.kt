@@ -1,15 +1,12 @@
 package com.myapp.newcommertranning
 
-import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.myapp.newcommertranning.Adapter.RecyclerAdapter
 
 import kotlinx.android.synthetic.main.activity_view2.*
 import kotlinx.android.synthetic.main.content_view2.*
-import kotlinx.android.synthetic.main.item_search_list.*
 
 class View2Activity : AppCompatActivity() {
 
@@ -21,12 +18,14 @@ class View2Activity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         // リストに表示するデータを作成
-        val adapter = RecyclerAdapter(this, createData())
+        val adapter = RecyclerAdapter(this, this, createData())
 
         // 作成したデータをリストにセット
         this.listRecycler.layoutManager = LinearLayoutManager(this)
         this.listRecycler.adapter = adapter
         //this.lblNumber.setBackgroundColor(Color.WHITE)
+//        val manager = LinearLayoutManager(this)
+//        manager.orientation = LinearLayoutManager.HORIZONTAL // ここで横方向に設定
 
         // 検索ボタンクリックイベント
         this.btnSearch.setOnClickListener { view ->
@@ -55,7 +54,7 @@ class View2Activity : AppCompatActivity() {
         // 作成スタートインデックス
         val startIndex = 0
         // データ数
-        val maxCount = 10
+        val maxCount = 30
 
         // データをループで作成
         for (i in startIndex until maxCount ) {

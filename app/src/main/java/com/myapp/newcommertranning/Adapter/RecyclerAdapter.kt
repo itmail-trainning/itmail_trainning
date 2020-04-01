@@ -8,9 +8,14 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.myapp.newcommertranning.R
-import kotlinx.android.synthetic.main.item_search_list.*
+import com.myapp.newcommertranning.RecyclerViewHolder
+import com.myapp.newcommertranning.View2Activity
 
-class RecyclerAdapter(context: Context, val data: List<String>): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
+class RecyclerAdapter(
+    context: Context,
+    data1: View2Activity,
+    val data: List<String>
+): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
     val inflater = LayoutInflater.from(context)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -29,7 +34,7 @@ class RecyclerAdapter(context: Context, val data: List<String>): RecyclerView.Ad
         // 内容にデータをセット
         holder.lblItem.text = data[position]
 
-        if((position + 1) % 5 == 0) {
+        if ((position + 1) % 5 == 0) {
             holder.lblNumber.setBackgroundColor(Color.RED)
         }
 
@@ -38,9 +43,9 @@ class RecyclerAdapter(context: Context, val data: List<String>): RecyclerView.Ad
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         // ラベル
         val lblNumber: TextView = itemView.findViewById(R.id.lblNumber)
+
         // 内容
         val lblItem: TextView = itemView.findViewById(R.id.lblItem)
 
     }
-
 }

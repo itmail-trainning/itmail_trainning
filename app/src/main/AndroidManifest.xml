@@ -19,6 +19,33 @@
                     android:value="com.myapp.newcommertranning.MainActivity"/>
         </activity>
         <activity
+            android:name=".View3Activity"
+            android:label="@string/title_activity_view3"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myapp.newcommertranning.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".View4Activity"
+            android:label="@string/title_activity_view4"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myapp.newcommertranning.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".View5Activity"
+            android:label="@string/title_activity_view5"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myapp.newcommertranning.MainActivity"/>
+        </activity>
+        <activity
                 android:name=".MainActivity"
                 android:label="@string/app_name"
                 android:theme="@style/AppTheme.NoActionBar">
@@ -28,6 +55,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

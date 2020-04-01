@@ -23,14 +23,15 @@
                 android:paddingEnd="5dp"
                 android:background="@android:color/holo_blue_light"
                 android:layout_marginEnd="3dp"/>
+
         <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:id="@+id/lblItem"
-                android:layout_weight="1"
-                android:background="@android:color/white"
-                android:gravity="fill_vertical"
-                android:textColor="@android:color/black"
-                android:paddingStart="5dp"/>
+            android:id="@+id/lblItem"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="fill_vertical"
+            android:paddingStart="5dp"
+            android:textColor="@android:color/black" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

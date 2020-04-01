@@ -4,4 +4,16 @@
     <string name="dog">ティメル犬</string>
     <string name="title">アイティメル沖縄</string>
     <string name="title_activity_view2">リスト検索</string>
+    <string name="title_activity_view3">電卓</string>
+    <string name="title_activity_view4">もあいPayユーザー登録</string>
+    <string name="title_activity_view5">もあい一覧</string>
+<string-array name="hoges">
+<item>hoge1</item>
+<item>hoge2</item>
+<item>hoge3</item>
+<item>hoge4</item>
+<item>hoge5</item>
+</string-array>
+
 </resources>
+

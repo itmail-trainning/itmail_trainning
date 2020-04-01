@@ -42,6 +42,16 @@ class MainActivity : AppCompatActivity(), Animation.AnimationListener {
                 isOperatorBtnPushed = false
             }
         }
+
+        fabMail.setOnClickListener {view ->
+            val intent = Intent(this, View3Activity::class.java)
+            startActivity(intent)
+        }
+
+        fabAdd.setOnClickListener {view ->
+            val intent = Intent(this, View4Activity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -81,6 +91,13 @@ class MainActivity : AppCompatActivity(), Animation.AnimationListener {
 
                 return true
             }
+            //もあい一覧表示
+            R.id.action_moai -> {
+                val intent = Intent(this, View5Activity::class.java)
+                startActivity(intent)
+
+                return true
+            }
             // その他
             else -> super.onOptionsItemSelected(item)
         }
@@ -102,4 +119,5 @@ class MainActivity : AppCompatActivity(), Animation.AnimationListener {
 
     override fun onAnimationRepeat(p0: Animation?) {
     }
+
 }

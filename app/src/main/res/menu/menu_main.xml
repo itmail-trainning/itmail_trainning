@@ -10,4 +10,8 @@
           android:title="@string/action_settings"
           android:orderInCategory="900"
           app:showAsAction="never"/>
+    <item android:id="@+id/action_moai"
+        android:title="@string/title_activity_view5"
+        android:orderInCategory="900"
+        app:showAsAction="never"/>
 </menu>
