@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="#FFFFFF"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="431dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="250dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="419dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/lblUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbar"
+                android:background="@android:color/holo_green_light"
+                android:gravity="fill_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:text="ユーザー名"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPassword"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="419dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/lblPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/lblUserID"
+                android:background="@android:color/holo_green_light"
+                android:gravity="fill_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:text="パスワード"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtUserID"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="419dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/lblUserID"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/lblIcon"
+                android:background="@android:color/holo_green_light"
+                android:gravity="fill_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:text="ユーザーID"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/txtUserID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_green_light"
+                android:gravity="fill_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:text="アイコン　"
+                android:textColor="@android:color/black" />
+
+            <ImageButton
+                android:id="@+id/btnImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="228dp"
+                android:clickable="true"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <ImageButton
+                android:id="@+id/btnCamera"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="228dp"
+                android:clickable="true"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/camera_preview"
+        android:layout_width="206dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toStartOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="96dp"
+        android:padding="0dp"
+        android:text="ユーザー登録"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" /><![CDATA[
+
+
+
+
+
+    ”match_parent”
+    android:layout_height=”match_parent”
+    android:orientation=”vertical” >
+
+
+
+
+
+
+
+
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
